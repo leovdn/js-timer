@@ -3,8 +3,12 @@
 }
 
 body {
-    background: linear-gradient(120deg,#183441 30%, rgb(66, 27, 35) 60% );
+    background: linear-gradient(0deg,#594e69, #9285a4);
     font-family: Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 body.active {
@@ -24,65 +28,68 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 12px 64px;
+    background: #e4e2e7;
+    box-shadow: 0px 0px 24px 4px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
+
+
 }
 
 .btnContainer {
-    background: #e4e4e4;
+    background: #e4e2e7;
     margin: 0 auto;
     width: 400px;
-    height: 100px;
-    border-radius: 12px;
+    height: 60px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 24px;
-    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-
 }
 
 .timerContainer {
-    background: #e4e4e4;
+    background: linear-gradient(0deg, #594e69, #4b4358);
     width: 400px;
-    height: 400px;
-    margin: 0 auto;
-    border-radius: 50%;
-    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.4);
+    height: 128px;
+    margin: 18px auto 64px auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    box-shadow: 0px 16px 32px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
 }
 
 .timerContainer span {
     font-size: 88px;
     font-weight: bold;
-    color: #333;
+    color: #fff;
 }
 
 button {
-    width: 160px;
-    height: 60px;
+    width: 120px;
+    height: 40px;
     border-style: none;
-    border-radius: 12px;
-    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 2px;
     cursor: pointer;
-    color: white;
-    font-size: 24px;
+    color: #524961;
+    font-size: 16px;
     font-weight: bold;
-
+    transition: ease-out 200ms;
+    text-transform: uppercase;
 }
 
 button.start {
-    background: #71d85c;
+    background: transparent;
 }
 
 button.pause {
-    background: #de424d;
+    background: transparent;
 }
 
 button.start:hover {
-    background: #5fb84d;
+    border-bottom: 2px solid #594e69;
 }
 
 button.pause:hover {
-    background: #b9373f;
+    border-bottom: 2px solid #594e69;
+
 }
